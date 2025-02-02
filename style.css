@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffebf0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevents scrollbar from appearing */
+}
+
+#container {
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    position: relative;
+}
+
+#image-container {
+    width: 100%;
+    height: 300px;
+    background: url('heart-image.png') center/cover no-repeat;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+#question {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+#options {
+    display: flex;
+    justify-content: space-between; /* Keeps "Yes" on the left and "No" on the right */
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#yes-button {
+    background-color: #ff6f91;
+    color: white;
+}
+
+#no-button {
+    background-color: #cccccc;
+    color: black;
+    position: relative;
+    transition: left 0.1s linear, top 0.1s linear; /* Increased speed */
+}
+
+button:hover {
+    opacity: 0.8;
+}
